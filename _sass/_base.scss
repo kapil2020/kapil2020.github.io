@@ -1218,6 +1218,12 @@ ninja-keys::part(ninja-input-wrapper) {
   border-color: var(--global-theme-color) !important;
 }
 
+.bibsearch-label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
 .newsletter-form-button {
   background: var(--global-theme-color);
   color: var(--global-bg-color);
