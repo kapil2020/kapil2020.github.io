@@ -522,7 +522,7 @@ ninja.data = [{
         title: 'Google Scholar',
         section: 'Socials',
         handler: () => {
-          window.open("https://scholar.google.com/citations?user=5jIAPTEAAAAJ&hl", "_blank");
+          window.open("https://scholar.google.com/citations?user=5jIAPTEAAAAJ", "_blank");
         },
       },{
         id: 'social-custom_social',
