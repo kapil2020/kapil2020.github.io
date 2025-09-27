@@ -27,7 +27,7 @@ latest_posts:
   limit: 3
 ---
 
-I am a PhD student at the [**Indian Institute of Technology Kharagpur**](https://www.iitkgp.ac.in/), affiliated with the [**MUST Lab**](https://www.mustlab.in/), where we work on building data-driven solutions for sustainable urban mobility.
+I am a PhD and student at the [**Indian Institute of Technology Kharagpur**](https://www.iitkgp.ac.in/), affiliated with the [**MUST Lab**](https://www.mustlab.in/), where we work on building data-driven solutions for sustainable urban mobility.
 
 I hold a Master’s (MTech) degree from [**IIT Roorkee**](https://www.iitr.ac.in/), and my academic journey lies at the intersection of **transportation systems**, **urban livability**, and **environmental sustainability**.
 
