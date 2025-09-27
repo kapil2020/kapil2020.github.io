@@ -23,7 +23,7 @@ inspirehep_id: 1010907 # Inspire HEP author ID
 # linkedin_username: # your LinkedIn user name
 # mastodon_username: # your mastodon instance+username in the format instance.tld/@username
 # medium_username: # your Medium username
-# orcid_id: # your ORCID ID
+ orcid_id: 0000-0002-0271-0175 # your ORCID ID
 # osf_id: # your OSF ID
 # pinterest_id: # your pinterest id
 # publons_id: # your ID on Publons
@@ -31,7 +31,7 @@ inspirehep_id: 1010907 # Inspire HEP author ID
 # research_gate_profile: # your profile on ResearchGate
 rss_icon: true # comment this line to hide the RSS icon
 scholar_userid: 5jIAPTEAAAAJ # your Google Scholar ID
-# scopus_id: # your profile on Scopus
+scopus_id:  57191300782# your profile on Scopus
 # semanticscholar_id: # your Semantic Scholar ID
 # spotify_id: # your spotify id
 # stackoverflow_id: # your stackoverflow id
