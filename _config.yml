@@ -38,8 +38,8 @@ author:
 github: kapil2020
 linkedin: https://www.linkedin.com/in/kapilmeena/
 website: http://www.sites.google.com/view/kapil-lab/home
-orcid:
-google_scholar: # (optional - add link if you have one)
+orcid: 0000-0002-0271-0175
+google_scholar: https://scholar.google.com/citations?user=5jIAPTEAAAAJ&hl=en  # (optional - add link if you have one)
 #keywords: jekyll, jekyll-theme, academic-website, portfolio-website # add your own keywords or leave empty
 #lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 #icon: ⚛️ # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
