@@ -451,8 +451,8 @@ ninja.data = [{
           section: "News",},{id: "news-excited-to-share-that-our-research-driven-routing-app-was-recently-featured-in-the-hindu-june-8-2025-the-article-highlights-how-our-tool-helps-commuters-make-greener-travel-choices-by-considering-real-time-pollution-and-traffic-data-this-marks-a-proud-moment-in-our-journey-toward-sustainable-urban-mobility-️",
           title: '📢 Excited to share that our research-driven routing app was recently featured in...',
           description: "",
-          section: "News",},{id: "projects-project-1",
-          title: 'project 1',
+          section: "News",},{id: "projects-perception-of-commuters-towards-air-quality-in-delhi",
+          title: 'perception of commuters towards air quality in delhi',
           description: "with background image",
           section: "Projects",handler: () => {
               window.location.href = "/projects/1_project/";
