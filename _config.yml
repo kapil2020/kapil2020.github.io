@@ -10,20 +10,26 @@ title: Kapil Meena
 first_name: Kapil
 middle_name:
 last_name: Meena
-contact_note: >
-  The best way to reach me is via email at kapil.meena@kgpian.iitkgp.ac.in.
-description: > # the ">" symbol means to ignore newlines until "footer_text:"
+
+contact_note: >-
+  The best way to reach me is via email at
+  <a href="mailto:kapilm.48@gmail.com">kapilm.48@gmail.com</a>.
+
+description: >-
   PhD scholar at IIT Kharagpur researching travel behaviour, air quality, and sustainable urban mobility.
-footer_text: >
-  Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with the <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
+
+footer_text: >-
+  Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with the
+  <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
+
 keywords: travel behaviour, air pollution, mobility, sustainable transport, urban planning, academic website
 lang: en
-icon: ⚛️
+icon: "⚛️"
 
-url: https://kapil2020.github.io
-baseurl: "" # leave this blank for personal site
-
+# user/organization site: keep baseurl empty
+url: "https://kapil2020.github.io"
+baseurl: ""
 last_updated: true
 back_to_top: true
 
@@ -128,8 +134,8 @@ related_blog_posts:
 # Giscus comments (RECOMMENDED)
 # Follow instructions on https://giscus.app/ to setup for your repo to fill out the information below.
 giscus:
-  repo: # <your-github-user-name>/<your-github-repo-name>
-  repo_id: # leave empty or specify your repo_id (see https://giscus.app/)
+  repo: kapil2020/kapil2020.github.io # your_github_username/your_repo_name
+  repo_id: https://github.com/kapil2020/react-frontend-kgp # your repo_id (see https://giscus.app/)
   category: Comments # name of the category under which discussions will be created
   category_id: # leave empty or specify your category_id (see https://giscus.app/)
   mapping: title # identify discussions by post title
@@ -147,13 +153,7 @@ disqus_shortname: kapil-folio # put your disqus shortname
 # External sources.
 # If you have blog posts published on medium.com or other external sources,
 # you can display them in your blog by adding a link to the RSS feed.
-external_sources:
-  - name: medium.com
-    rss_url: https://medium.com/@al-folio/feed
-  - name: Google Blog
-    posts:
-      - url: https://blog.google/technology/ai/google-gemini-update-flash-ai-assistant-io-2024/
-        published_date: 2024-05-14
+external_sources: []
 
 # -----------------------------------------------------------------------------
 # Newsletter
@@ -317,7 +317,7 @@ scholar:
 enable_publication_badges:
   altmetric: true # Altmetric badge (Customization options: https://badge-docs.altmetric.com/index.html)
   dimensions: true # Dimensions badge (Customization options: https://badge.dimensions.ai/)
-  google_scholar: true # Google Scholar badge (https://scholar.google.com/intl/en/scholar/citations.html)
+  google_scholar: false # Google Scholar badge (https://scholar.google.com/intl/en/scholar/citations.html)
   inspirehep: true # Inspire HEP badge (https://help.inspirehep.net/knowledge-base/citation-metrics/)
 
 # Filter out certain bibtex entry keywords used internally from the bib output
@@ -371,30 +371,20 @@ external_links:
 
 # MAKE SURE imagemagick is installed and on your PATH before enabling imagemagick. In a terminal, run:
 #   convert -version
+# -----------------------------------------------------------------------------
+# Responsive WebP Images
+# -----------------------------------------------------------------------------
 imagemagick:
-  enabled: true # enables responsive images for your site (recommended, see https://github.com/alshedivat/al-folio/issues/537)
-  widths:
-    - 480
-    - 800
-    - 1400
+  enabled: false
+  widths: [480, 800, 1400]
   input_directories:
     - assets/img/
-  input_formats:
-    - ".jpg"
-    - ".jpeg"
-    - ".png"
-    - ".tiff"
-    - ".gif"
+  input_formats: [".jpg", ".jpeg", ".png", ".tiff", ".gif"]
   output_formats:
     webp: "-quality 85"
 
-# Lazy loading images
-#   If you enable lazy loading, all images will add the loading="lazy" attribute.
-#   This will make your site load faster, but it may not be supported in all browsers.
-#   You can also set loading="" to other values for specific images to override the default behavior.
-#   Options: "auto", "eager", "lazy"
-#   See https://web.dev/browser-level-image-lazy-loading/ for more information.
-lazy_loading_images: true # enables lazy loading of images (recommended)
+lazy_loading_images: true
+
 
 # -----------------------------------------------------------------------------
 # Optional Features

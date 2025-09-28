@@ -6,7 +6,7 @@ subtitle: <a href='#'>About me:</a> Researcher. Analyst. Problem-solver.
 
 profile:
   align: right
-  image: kp_1.jpg
+  image: kp_1.jpg  
   image_circular: false
   more_info: >
     <p><a href="https://www.mustlab.in/" target="_blank">MUST Lab</a></p>

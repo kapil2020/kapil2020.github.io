@@ -2,7 +2,8 @@
 layout: page
 permalink: /repositories/
 title: repositories
-description: Edit the `_data/repositories.yml` and change the `github_users` and `github_repos` lists to include your own GitHub profile and repositories.
+description: A curated showcase of my most important GitHub repositories across air quality, transportation, surveys, and academic tooling.
+nav: true
 nav: true
 nav_order: 4
 ---
