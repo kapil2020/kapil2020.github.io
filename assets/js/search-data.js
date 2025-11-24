@@ -446,6 +446,11 @@ ninja.data = [{
           description: "another project with an image 🎉",
           section: "Projects",handler: () => {
               window.location.href = "/projects/9_project/";
+            },},{id: "projects-drum-web-app",
+          title: 'DRUM Web App',
+          description: "Demand Responsive Urban Mobility (DRUM) decision-support web application for evaluating flexible route bus services.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/drum-web-app/";
             },},{
         id: 'social-email',
         title: 'email',
