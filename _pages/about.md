@@ -6,7 +6,7 @@ subtitle: <a href='#'>About me:</a> Researcher. Analyst. Problem-solver.
 
 profile:
   align: right
-  image: kp_1.jpg  
+  image: kp_1.jpg
   image_circular: false
   more_info: >
     <p><a href="https://www.mustlab.in/" target="_blank">MUST Lab</a></p>
@@ -27,30 +27,15 @@ latest_posts:
   limit: 3
 ---
 
-I am a PhD student at the [**Indian Institute of Technology Kharagpur**](https://www.iitkgp.ac.in/), affiliated with the [**MUST Lab**](https://www.mustlab.in/), where we work on building data-driven solutions for sustainable urban mobility.
+I am a PhD candidate in Transportation Engineering at the Indian Institute of Technology Kharagpur and I work as a research consultant with WRI India. My research interests include sustainable transport planning, urban air quality and human exposure, travel behaviour and mobility demand, activity travel behaviour and environmental impacts, gender and equity differences in mobility, and data analytics and machine learning for transport planning. I hold a Master's in Transportation Systems Engineering from IIT Roorkee and a Bachelor's in Civil Engineering from Rajasthan Technical University.
 
-I hold a Master’s (MTech) degree from [**IIT Roorkee**](https://www.iitr.ac.in/), and my academic journey lies at the intersection of **transportation systems**, **urban livability**, and **environmental sustainability**.
+**Research interests**
 
-My research primarily investigates:
-- **Urban air quality and human exposure to pollution**
-- **Travel Behaviour**
-- **Activity-travel behavior** and its environmental impact
-- **Gender differences in travel behavior and health outcomes**
+- Sustainable transport planning and policy.
+- Urban air quality and human exposure.
+- Travel behaviour and mobility on demand.
+- Activity and travel behaviour and environmental impacts.
+- Gender and equity differences in travel behaviour and health outcomes.
+- Application of machine learning and data analytics in transport planning.
 
-At MUST Lab, we aim to develop transport infrastructure professionals equipped to tackle emerging challenges at the nexus of transport, health, and environment.
-
-In addition, I actively apply **machine learning** and **data analytics** in transportation to promote informed policy and sustainable mobility solutions.
-
----
-
-### 🔬 Research Interests
-- Machine Learning in Transportation  
-- Urban Air Quality & Public Health  
-- Travel Behavior Analysis  
-- Sustainable & Active Travel Modes  
-- Transport Emissions and Exposure Modeling  
-- Gender Equity in Urban Mobility  
-
----
-
-📫 Feel free to connect with me on [LinkedIn](https://www.linkedin.com/in/kapilmeena/) or reach out via [email](mailto:kapil.meena@kgpian.iitkgp.ac.in).
+I have contributed to projects such as the DRUM Web App for evaluating demand responsive mobility, the TUTEM decision support system for managing urban mobilitbadminton, running, and exploring new cities.iculate matter levels in Indian cities using machine learning, and building an urban air quality dashboard. When I am not at my desk, I enjoy playing b(mailto:kapil.meena@kgpian.iitkgp.ac.in).
