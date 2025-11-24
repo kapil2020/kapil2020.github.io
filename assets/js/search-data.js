@@ -451,6 +451,11 @@ ninja.data = [{
           description: "Demand Responsive Urban Mobility (DRUM) decision-support web application for evaluating flexible route bus services.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/drum-web-app/";
+            },},{id: "projects-tutem-decision-support-system",
+          title: 'TUTEM Decision Support System',
+          description: "Decision support system for integrated urban transportation and emissions management.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/tutem/";
             },},{
         id: 'social-email',
         title: 'email',
