@@ -456,6 +456,11 @@ ninja.data = [{
           description: "Demand Responsive Urban Mobility (DRUM) decision-support web application for evaluating flexible route bus services.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/drum-web-app/";
+            },},{id: "projects-pm2-5-forecasting",
+          title: 'PM2.5 Forecasting',
+          description: "A spatio-temporal deep learning model to predict fine particulate concentrations across Indian states.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/pm2-5-forecasting/";
             },},{id: "projects-tutem-decision-support-system",
           title: 'TUTEM Decision Support System',
           description: "Decision support system for integrated urban transportation and emissions management.",
