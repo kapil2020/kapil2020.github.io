@@ -33,9 +33,10 @@ I am a PhD candidate in Transportation Engineering at the Indian Institute of Te
 
 - Sustainable transport planning and policy.
 - Urban air quality and human exposure.
-- Travel behaviour and mobility on demand.
+- Travel behaviour and mobility demand.
 - Activity and travel behaviour and environmental impacts.
 - Gender and equity differences in travel behaviour and health outcomes.
 - Application of machine learning and data analytics in transport planning.
 
-I have contributed to projects such as the DRUM Web App for evaluating demand responsive mobility, the TUTEM decision support system for managing urban mobilitbadminton, running, and exploring new cities.iculate matter levels in Indian cities using machine learning, and building an urban air quality dashboard. When I am not at my desk, I enjoy playing b(mailto:kapil.meena@kgpian.iitkgp.ac.in).
+I have contributed to projects such as the DRUM Web App for evaluating demand responsive mobility, the TUTEM decision support system for integrated urban transportation and emissions management, a machine learning model for predicting particulate matter levels in Indian cities, and an urban air quality dashboard. When I am not working, I enjoy playing badminton, running and exploring new cities. You can reach me via email at [kapil.meena@kgpian.iitkgp.ac.in](mailto:kapil.meena@kgpian.iitkgp.ac.in).
+
