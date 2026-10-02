@@ -1,7 +1,7 @@
 {
-  "name": "Kapil Kumar Meena",
+  "name": "Dr. Kapil Meena",
   "short_name": "Kapil Meena",
-  "description": "Kapil Kumar Meena is a postdoctoral researcher in the HUMAN Lab at UCLA. He studies how people travel under air pollution, heat and new information, develops discrete choice and machine-learning methods, and builds decision tools such as the patented DRUM routing app.",
+  "description": "Dr. Kapil Kumar Meena is a postdoctoral researcher in the HUMAN Lab at UCLA. He studies how people travel under air pollution, heat and new information, develops discrete choice and machine-learning methods, and builds decision tools such as the patented DRUM routing app.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#070a12",
@@ -16,11 +16,6 @@
       "src": "/assets/img/icon-512.png",
       "sizes": "512x512",
       "type": "image/png"
-    },
-    {
-      "src": "/assets/img/favicon.svg",
-      "sizes": "any",
-      "type": "image/svg+xml"
     }
   ]
 }
