@@ -17,8 +17,9 @@ test.describe('page', () => {
   test('loads without errors and shows the essentials', async ({ page }) => {
     const errors = watchErrors(page);
     await page.goto('/');
-    await expect(page).toHaveTitle(/Kapil Kumar Meena/);
-    await expect(page.getByRole('heading', { level: 1 })).toContainText('Kapil Kumar');
+    await expect(page).toHaveTitle(/^Dr\. Kapil Meena/);
+    await expect(page.getByRole('heading', { level: 1 })).toHaveText('Dr. Kapil Meena');
+    await expect(page.locator('.hero__role')).toContainText('Postdoctoral Researcher');
     await expect(page.locator('.hero__tagline')).toContainText('polluted air');
     for (const id of ['about', 'news', 'research', 'publications', 'software', 'experience', 'honours', 'teaching', 'service', 'contact']) {
       await expect(page.locator(`#${id}`)).toHaveCount(1);

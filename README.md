@@ -8,9 +8,11 @@ Node script renders it into a static page. Every push is tested in a real browse
 
 ## What's on the page
 
-- **Hero** with a live generative sketch: commuters (dots) move along a city street grid, steer around
-  drifting pockets of polluted air, and the cursor acts as a clean-air bubble. It's the research in one
-  picture, it pauses when it's off screen, and with reduced motion it draws a single still frame.
+- **Wide hero**: name set in Schibsted Grotesk, role and affiliation, a one-line research statement and
+  a row of credentials, with the portrait as a full-height panel that fades into the page. Underneath
+  runs a live generative sketch: commuters (dots) move along a city street grid, steer around drifting
+  pockets of polluted air, and the cursor acts as a clean-air bubble. It pauses when it's off screen,
+  and with reduced motion it draws a single still frame.
 - **About, News (tabbed by year), Research** (Figure 1 pipeline and three research thrusts),
   **Publications, Software, Experience, Honours, Teaching & talks, Service & toolkit, Contact.**
 - **Topic illustrations for every paper and tool**: 23 inline-SVG drawings, one per study (smog and
@@ -79,5 +81,5 @@ publishes `_site/` to the `gh-pages` branch, which GitHub Pages serves.
 
 ## Credits
 
-Fonts: Inter, Instrument Serif and JetBrains Mono (SIL Open Font License), self-hosted. Icons: Lucide
+Fonts: Schibsted Grotesk, Inter, Instrument Serif and JetBrains Mono (SIL Open Font License), self-hosted. Icons: Lucide
 (ISC) and Simple Icons (CC0).

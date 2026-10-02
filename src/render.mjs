@@ -251,10 +251,7 @@ const NAV = [
 function header() {
   return `<header class="nav" data-nav>
   <div class="container nav__inner">
-    <a class="brand" href="#top" aria-label="${esc(site.name)}, back to top">
-      <span class="brand__mark" aria-hidden="true">${site.initials}</span>
-      <span class="brand__name">${esc(site.name)}</span>
-    </a>
+    <a class="brand" href="#top" aria-label="${esc(site.displayName)}, back to top">${esc(site.displayName)}</a>
     <nav class="nav__links" aria-label="Sections">
       ${NAV.map(([id, label]) => `<a href="#${id}" data-spy="${id}">${label}</a>`).join('')}
     </nav>
@@ -291,10 +288,16 @@ function hero() {
   return `<section class="hero" id="top" aria-labelledby="hero-title">
   <canvas class="hero__canvas" data-hero-canvas aria-hidden="true"></canvas>
   <div class="hero__veil" aria-hidden="true"></div>
-  <div class="container hero__grid">
+  <div class="hero__media">
+    <picture>
+      <source type="image/webp" srcset="assets/img/hero-640.webp 640w, assets/img/hero-1122.webp 1122w" sizes="(max-width: 980px) 100vw, 46vw">
+      <img src="assets/img/hero-1122.jpg" srcset="assets/img/hero-640.jpg 640w, assets/img/hero-1122.jpg 1122w" sizes="(max-width: 980px) 100vw, 46vw" width="1122" height="1572" alt="Portrait of ${esc(site.displayName)}" fetchpriority="high" decoding="async">
+    </picture>
+  </div>
+  <div class="container hero__inner">
     <div class="hero__text">
-      <p class="hero__eyebrow"><span class="pulse-dot" aria-hidden="true"></span><span>${extLinks(h.eyebrow)}</span></p>
-      <h1 class="hero__title" id="hero-title"><span class="hero__line">Kapil Kumar</span> <span class="hero__line hero__line--accent">Meena</span></h1>
+      <h1 class="hero__title" id="hero-title">${esc(site.displayName)}</h1>
+      <p class="hero__role"><span class="hero__role-title">${esc(h.role)}</span><span class="hero__role-org">${extLinks(h.affiliation)}</span></p>
       <p class="hero__tagline">${h.tagline}</p>
       <div class="hero__cta">
         <a class="btn btn--primary btn--lg" href="#research">Explore my research ${icon('arrow-right')}</a>
@@ -305,31 +308,10 @@ function hero() {
         ${C.profiles.map((p) => `<li>${a(p.href, icon(p.icon), 'social', `aria-label="${p.label}" data-tip="${p.label}"`)}</li>`).join('')}
       </ul>
     </div>
-    <div class="hero__visual">
-      <figure class="portrait">
-        <div class="portrait__frame">
-          <picture>
-            <source type="image/webp" srcset="assets/img/portrait-480.webp 480w, assets/img/portrait-880.webp 880w" sizes="(max-width: 860px) 70vw, 400px">
-            <img src="assets/img/portrait-880.jpg" srcset="assets/img/portrait-480.jpg 480w, assets/img/portrait-880.jpg 880w" sizes="(max-width: 860px) 70vw, 400px" width="880" height="1100" alt="Portrait of Kapil Kumar Meena" fetchpriority="high" decoding="async">
-          </picture>
-        </div>
-        <figcaption class="portrait__cap">
-          <span class="portrait__cap-name">${esc(site.name)}</span>
-          <span class="portrait__cap-org">${icon('map-pin')}${esc(site.lab)}, ${esc(site.orgShort)}</span>
-        </figcaption>
-        <ul class="portrait__chips" aria-label="Highlights">
-          ${h.chips
-            .map((c, i) => {
-              const inner = `${icon(c.icon)}<span>${c.text}</span>`;
-              return `<li class="float-chip float-chip--${i + 1}">${c.href ? `<a class="float-chip__in" href="${c.href}">${inner}</a>` : `<span class="float-chip__in">${inner}</span>`}</li>`;
-            })
-            .join('')}
-        </ul>
-      </figure>
-    </div>
+    <dl class="hero__creds">
+      ${h.credentials.map((c) => `<div class="cred"><dt>${esc(c.label)}</dt><dd><a href="${c.href}">${c.value}</a></dd></div>`).join('')}
+    </dl>
   </div>
-  <p class="hero__legend container" aria-hidden="true"><span class="hero__legend-dot hero__legend-dot--clean"></span>commuters <span class="hero__legend-dot hero__legend-dot--air"></span>polluted air <span class="hero__legend-hint">· move your cursor to clear the air</span></p>
-  <a class="hero__scroll" href="#about" aria-label="Scroll to About"><span></span></a>
 </section>`;
 }
 
@@ -716,8 +698,8 @@ function footer() {
   return `<footer class="footer">
   <div class="container footer__inner">
     <div class="footer__brand">
-      <span class="brand__mark" aria-hidden="true">${site.initials}</span>
-      <div><b>${esc(site.name)}</b><span>${esc(site.role)}, ${esc(site.lab)}, ${esc(site.orgShort)}</span></div>
+      <b class="brand">${esc(site.displayName)}</b>
+      <span>${esc(site.role)}, ${esc(site.lab)}, ${esc(site.orgShort)}</span>
     </div>
     <nav class="footer__nav" aria-label="Footer">
       ${[...NAV, ['news', 'News'], ['honours', 'Honours'], ['teaching', 'Teaching']].map(([id, l]) => `<a href="#${id}">${l}</a>`).join('')}
@@ -759,7 +741,8 @@ function jsonLd() {
     '@type': 'Person',
     '@id': `${site.url}/#person`,
     name: site.name,
-    alternateName: ['Kapil Meena', 'K. K. Meena'],
+    honorificPrefix: 'Dr.',
+    alternateName: [site.displayName, 'Kapil Meena', 'K. K. Meena'],
     jobTitle: site.role,
     url: `${site.url}/`,
     image: `${site.url}/assets/img/portrait-880.jpg`,
@@ -811,14 +794,14 @@ export function head({ title, description, path = '/', css, extra = '' }) {
 <meta name="theme-color" content="#070a12" media="(prefers-color-scheme: dark)">
 <meta name="theme-color" content="#f6f7f4" media="(prefers-color-scheme: light)">
 <meta property="og:type" content="profile">
-<meta property="og:site_name" content="${esc(site.name)}">
+<meta property="og:site_name" content="${esc(site.displayName)}">
 <meta property="og:title" content="${esc(title)}">
 <meta property="og:description" content="${esc(description)}">
 <meta property="og:url" content="${url}">
 <meta property="og:image" content="${site.url}/assets/img/og.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="${esc(site.name)}, ${esc(site.role)} at ${esc(site.orgShort)}">
+<meta property="og:image:alt" content="${esc(site.displayName)}, ${esc(site.role)} at ${esc(site.orgShort)}">
 <meta property="profile:first_name" content="Kapil Kumar">
 <meta property="profile:last_name" content="Meena">
 <meta name="twitter:card" content="summary_large_image">
@@ -826,11 +809,11 @@ export function head({ title, description, path = '/', css, extra = '' }) {
 <meta name="twitter:description" content="${esc(description)}">
 <meta name="twitter:image" content="${site.url}/assets/img/og.png">
 <link rel="icon" href="/favicon.ico" sizes="32x32">
-<link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/assets/img/icon-192.png" type="image/png" sizes="192x192">
 <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
 <link rel="manifest" href="/site.webmanifest">
+<link rel="preload" href="/assets/fonts/schibsted-grotesk.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/assets/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="/assets/fonts/instrument-serif.woff2" as="font" type="font/woff2" crossorigin>
 <script>${THEME_BOOT}</script>
 <link rel="stylesheet" href="${css}">
 ${extra}`;

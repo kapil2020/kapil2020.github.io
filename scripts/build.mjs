@@ -72,7 +72,7 @@ export function build({ quiet = false } = {}) {
     'site.webmanifest',
     JSON.stringify(
       {
-        name: site.name,
+        name: site.displayName,
         short_name: site.shortName,
         description: site.description,
         start_url: '/',
@@ -82,7 +82,6 @@ export function build({ quiet = false } = {}) {
         icons: [
           { src: '/assets/img/icon-192.png', sizes: '192x192', type: 'image/png' },
           { src: '/assets/img/icon-512.png', sizes: '512x512', type: 'image/png' },
-          { src: '/assets/img/favicon.svg', sizes: 'any', type: 'image/svg+xml' },
         ],
       },
       null,

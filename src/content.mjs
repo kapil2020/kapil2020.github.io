@@ -6,8 +6,8 @@
 export const site = {
   url: 'https://kapil2020.github.io',
   name: 'Kapil Kumar Meena',
+  displayName: 'Dr. Kapil Meena',
   shortName: 'Kapil Meena',
-  initials: 'KM',
   role: 'Postdoctoral Researcher',
   lab: 'HUMAN Lab',
   org: 'University of California, Los Angeles',
@@ -16,9 +16,9 @@ export const site = {
   email: 'kapilm.48@gmail.com',
   cv: 'assets/cv/Kapil-Kumar-Meena-CV.pdf',
   updated: 'October 2026',
-  title: 'Kapil Kumar Meena · Travel behaviour, air pollution & AI for transportation',
+  title: 'Dr. Kapil Meena · Travel behaviour, air pollution & AI for transportation',
   description:
-    'Kapil Kumar Meena is a postdoctoral researcher in the HUMAN Lab at UCLA. He studies how people travel under air pollution, heat and new information, develops discrete choice and machine-learning methods, and builds decision tools such as the patented DRUM routing app.',
+    'Dr. Kapil Kumar Meena is a postdoctoral researcher in the HUMAN Lab at UCLA. He studies how people travel under air pollution, heat and new information, develops discrete choice and machine-learning methods, and builds decision tools such as the patented DRUM routing app.',
   keywords:
     'Kapil Kumar Meena, travel behaviour, discrete choice modelling, air pollution exposure, heat, route choice, transportation engineering, machine learning, UCLA, IIT Kharagpur, DRUM',
 };
@@ -69,14 +69,15 @@ export const stats = [
 // ---------------------------------------------------------------------------
 
 export const hero = {
-  eyebrow: `Postdoctoral Researcher · <a href="${links.humanLab}">HUMAN Lab</a>, UCLA`,
-  // The tagline is set in the display face; <em> words get the accent gradient.
+  role: 'Postdoctoral Researcher',
+  affiliation: `<a href="${links.humanLab}">HUMAN Lab</a>, University of California, Los Angeles`,
   tagline:
-    'I study how people travel through <em>polluted air</em>, <em>extreme heat</em> and <em>new information</em>, and build the models and tools that help them choose better.',
-  chips: [
-    { icon: 'graduation-cap', text: 'Ph.D. IIT Kharagpur, 2026' },
-    { icon: 'stamp', text: 'Patent published, 2026', href: '#patent' },
-    { icon: 'newspaper', text: 'Featured in <i>The Hindu</i>', href: '#media' },
+    'I study how people travel through <strong>polluted air</strong>, <strong>extreme heat</strong> and <strong>new information</strong>, and build the models and tools that help them choose better.',
+  credentials: [
+    { label: 'Ph.D.', value: 'IIT Kharagpur, 2026', href: '#experience' },
+    { label: 'Visiting Fellow', value: 'University of Leeds, 2024', href: '#experience' },
+    { label: 'Patent', value: 'Published 2026', href: '#patent' },
+    { label: 'Featured in', value: '<i>The Hindu</i>, 2025', href: '#media' },
   ],
 };
 
