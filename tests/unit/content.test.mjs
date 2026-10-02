@@ -76,7 +76,6 @@ test('topics and research citations resolve', () => {
 test('icons used in content exist', () => {
   const used = [
     ...C.profiles.map((p) => p.icon),
-    ...C.hero.chips.map((c) => c.icon),
     ...C.about.pillars.map((p) => p.icon),
     ...C.about.facts.map((f) => f.icon),
     ...C.research.pipeline.map((s) => s.icon),

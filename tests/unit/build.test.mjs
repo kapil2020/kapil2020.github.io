@@ -159,7 +159,7 @@ test('404 page uses absolute asset paths (it is served at any URL)', () => {
 });
 
 test('site files for crawlers and installs exist', () => {
-  for (const f of ['robots.txt', 'sitemap.xml', 'site.webmanifest', '.nojekyll', 'favicon.ico', 'assets/img/og.png', 'assets/img/favicon.svg', 'assets/cv/Kapil-Kumar-Meena-CV.pdf']) {
+  for (const f of ['robots.txt', 'sitemap.xml', 'site.webmanifest', '.nojekyll', 'favicon.ico', 'assets/img/og.png', 'assets/img/icon-192.png', 'assets/cv/Kapil-Kumar-Meena-CV.pdf']) {
     assert.ok(existsSync(join(SITE, f)), f);
   }
   assert.match(readFileSync(join(SITE, 'robots.txt'), 'utf8'), /Sitemap: https:\/\/kapil2020\.github\.io\/sitemap\.xml/);
